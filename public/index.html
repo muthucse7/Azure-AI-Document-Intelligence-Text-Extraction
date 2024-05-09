@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure AI Document Intelligence - Created by Muthu Selvam</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1 class="text-center">Azure AI Document Intelligence - Text Extraction</h1>
+        <p style="text-align: center">
+          Muthu Selvam | ITIS 6177 - System Integration | mselvam@uncc.edu
+        </p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row mt-4">
+        <!-- Upload Document Section -->
+        <div class="col-md-6">
+          <form id="uploadForm" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="fileInput">Upload Document (.jpg, .jpeg, .png, .pdf):</label>
+              <input
+                type="file"
+                class="form-control-file"
+                id="fileInput"
+                accept=".jpg, .jpeg, .png, .pdf"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Extract Text</button>
+          </form>
+          <!-- Spinner -->
+
+          <div class="spinner-border-container" style="margin-top: 10px">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+          <div
+            class="output-container mt-4"
+            id="outputContainer"
+            style="display: none"
+          >
+            <h3>Extracted Text:</h3>
+            <pre id="outputText" style="white-space: pre-wrap;"></pre>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="api-docs">
+            <!-- Add API documentation review content here -->
+            <h3>API Documentation Review</h3>
+            <iframe src="http://104.131.75.28:3000/api-docs/" frameborder="0" width="600" height="600"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="text-center">
+          © 2024 Designed by Muthu Selvam. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
