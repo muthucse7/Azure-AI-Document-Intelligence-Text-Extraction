@@ -1,4 +1,4 @@
-# Final Project: Azure AI Document Intelligence - Text Extraction
+# Final Project: Integrated Text Extraction with Azure AI Document Intelligence
 
 ## Project Details
 
